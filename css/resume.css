@@ -1,0 +1,250 @@
+/*!
+ * Start Bootstrap - Resume v5.0.8 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ */
+
+:root {
+  --sideNav-width: 17rem;
+  --section-width: 75rem;
+}
+
+body {
+  font-family: 'Inconsolata';
+  padding-top: 54px; /* taking account navbar */
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    margin-left: var(--sideNav-width); /* has to match sideNav width */
+  }
+}
+
+/* Social Icon */
+
+.social-icons {
+  z-index: 100;
+  bottom: 1rem;
+  right: 2rem;
+  list-style: none;
+}
+
+.social-icons a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: white;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  border-radius: 50%;
+  box-shadow: 0px 12px 11px -3px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-bottom: 1rem;
+  transition: all ease-in-out 300ms, color ease-in-out 500ms;
+}
+
+.social-icons a:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 0px 37px 20px -15px rgba(0, 0, 0, 0.2);
+  transform: translate(0px, -10px);
+}
+
+.social-icons li.icon {
+  display: none;
+}
+
+/* Side Nav Bar */
+
+#sideNav .navbar-brand {
+  font-size: 2rem;
+}
+
+#sideNav .navbar-collapse {
+  margin-top: 1rem;
+  border-top: 2px solid black;
+}
+
+#sideNav .navbar-nav .nav-item {
+  text-align: right;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link.active {
+  color: black;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link:hover {
+  border-bottom: 2px solid black;
+  color: black;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+#sideNav .navbar-toggler:focus {
+  outline-color: black;
+}
+
+@media (min-width: 992px) {
+  #sideNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: var(--sideNav-width);
+    height: 100vh;
+  }
+  #sideNav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile {
+    max-width: 6rem;
+    max-height: 6rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
+  #sideNav .navbar-collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+    margin-top: 0;
+    border: none;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item {
+    text-align: center;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+/* Resume Section */
+
+section.resume-section {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+  max-width: var(--section-width);
+}
+
+section.resume-section .resume-item .resume-content li {
+  margin-bottom: 0.25rem;
+}
+
+section.resume-section .resume-item .resume-content li:last-child {
+  margin-bottom: 0;
+}
+
+section.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+  section.resume-section#awards {
+    min-height: 85vh;
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+/* Generals */
+
+.dev-icons {
+  font-size: 3rem;
+}
+
+.dev-icons .orange:hover {
+  color: #ff500a;
+}
+.dev-icons .green:hover {
+  color: #3fa037;
+}
+.dev-icons .purple:hover {
+  color: #4a44a5;
+}
+.dev-icons .yellow:hover {
+  color: #f0db4f;
+}
+.dev-icons .blue:hover {
+  color: #0078d7;
+}
+.dev-icons .react:hover {
+  color: #61dbfb;
+}
+.dev-icons .red:hover {
+  color: #cc3534;
+}
+.dev-icons .black:hover {
+  color: #3c3d44;
+}
+.dev-icons .netlify:hover {
+  /* background-image: linear-gradient(
+    to top,
+    #1480c6,
+    #0098d1,
+    #00adca,
+    #00c0b4,
+    #25cf94
+  ); */
+  background: -webkit-linear-gradient(#25cfc0, #1480c6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer {
+  font-size: 0.8rem;
+}
+
+.subheading {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.bg-primary {
+  background-color: white !important;
+}
+
+.text-primary {
+  color: #7f8c98 !important;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5rem;
+}
+
+a,
+a:hover {
+  color: black;
+}
